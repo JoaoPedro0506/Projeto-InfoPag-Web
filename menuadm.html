@@ -674,7 +674,7 @@
                     inputCargo.style.height = "30px"; // Altura do campo de entrada de texto
                     inputCargo.style.fontSize = "20px"; // Tamanho da fonte do campo de entrada de texto
                     inputCargo.style.position = "absolute";
-                    inputCargo.style.top = "200px"; // Posição superior do campo de entrada de texto
+                    inputCargo.style.top = "203px"; // Posição superior do campo de entrada de texto
                     inputCargo.style.left = "350px"; // Posição esquerda do campo de entrada de texto
                     inputCargo.placeholder = "Cargo"; // Adicione um texto de orientação
                     inputCargo.style.border = "2px solid";
@@ -811,7 +811,7 @@
     // Crie um pop-up de "Descartar Alterações?"
     var popup = document.createElement("div");
     popup.style.position = "fixed";
-    popup.style.background = "white";
+    popup.style.background = "bisque";
     popup.style.border = "2px solid black";
     popup.style.padding = "20px";
     popup.style.textAlign = "center";
@@ -835,20 +835,38 @@
     // Adicione os botões "Cancelar" e "Confirmar" ao pop-up
     var botaoCancelarPopup = document.createElement("button");
     botaoCancelarPopup.innerText = "Cancelar";
+    botaoCancelarPopup.style.backgroundColor = "white";
     botaoCancelarPopup.style.cursor = "pointer";
     botaoCancelarPopup.style.fontFamily = "arial";
     botaoCancelarPopup.style.width = "100px";
     botaoCancelarPopup.style.height = "40px";
-    botaoCancelarPopup.style.fontSize = "24px";
+    botaoCancelarPopup.style.fontSize = "19px";
     botaoCancelarPopup.style.marginRight = "20px";
+    botaoCancelarPopup.addEventListener("mouseover", function(){
+        botaoCancelarPopup.style.backgroundColor = "#0F0F33"
+        botaoCancelarPopup.style.color = "white";
+                 });
+                 botaoCancelarPopup.addEventListener("mouseout", function(){
+                    botaoCancelarPopup.style.backgroundColor = "white";
+                    botaoCancelarPopup.style.color = "black";
+                 });
 
     var botaoConfirmarPopup = document.createElement("button");
     botaoConfirmarPopup.innerText = "Confirmar";
+    botaoConfirmarPopup.style.backgroundColor = "white";
     botaoConfirmarPopup.style.cursor = "pointer";
     botaoConfirmarPopup.style.fontFamily = "arial";
     botaoConfirmarPopup.style.width = "100px";
     botaoConfirmarPopup.style.height = "40px";
-    botaoConfirmarPopup.style.fontSize = "24px";
+    botaoConfirmarPopup.style.fontSize = "19px";
+    botaoConfirmarPopup.addEventListener("mouseover", function(){
+        botaoConfirmarPopup.style.backgroundColor = "#0F0F33"
+        botaoConfirmarPopup.style.color = "white";
+                 });
+                 botaoConfirmarPopup.addEventListener("mouseout", function(){
+                    botaoConfirmarPopup.style.backgroundColor = "white";
+                    botaoConfirmarPopup.style.color = "black";
+                 });
 
     // Adicione a ação para fechar o pop-up ao clicar em "Confirmar"
     botaoConfirmarPopup.addEventListener("click", function (event) {
@@ -1038,7 +1056,7 @@
                     inputCargo.style.height = "30px"; // Altura do campo de entrada de texto
                     inputCargo.style.fontSize = "20px"; // Tamanho da fonte do campo de entrada de texto
                     inputCargo.style.position = "absolute";
-                    inputCargo.style.top = "200px"; // Posição superior do campo de entrada de texto
+                    inputCargo.style.top = "203px"; // Posição superior do campo de entrada de texto
                     inputCargo.style.left = "350px"; // Posição esquerda do campo de entrada de texto
                     inputCargo.placeholder = "Cargo"; // Adicione um texto de orientação
                     inputCargo.style.border = "2px solid";
@@ -1100,7 +1118,7 @@
                         // Crie um pop-up de "Cadastro Realizado"
                         var PopupCadastroCriado = document.createElement("div");
                         PopupCadastroCriado.style.position = "fixed";
-                        PopupCadastroCriado.style.background = "white";
+                        PopupCadastroCriado.style.background = "bisque";
                         PopupCadastroCriado.style.border = "2px solid black";
                         PopupCadastroCriado.style.padding = "20px";
                         PopupCadastroCriado.style.textAlign = "center";
